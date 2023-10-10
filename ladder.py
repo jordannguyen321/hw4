@@ -1,15 +1,15 @@
-def my_steps(n):
-    if n < 1 or n > 25:
+def my_steps(x):
+    if x < 1 or x > 25:
         raise ValueError("Input must be between 1 and 25")
 
-    if n <= 2:
-        return n
+    if x <= 2:
+        return x
 
-    ways = [0] * (n + 1)
-    ways[1] = 1
-    ways[2] = 2
+    num = [0] * (x + 1)
+    num[1] = 1
+    num[2] = 2
 
-    for i in range(3, n + 1):
-        ways[i] = ways[i - 1] + ways[i - 2]
+    for i in range(3, x + 1):
+        num[i] = num[i - 1] + num[i - 2]
 
-    return ways[n]
+    return num[n]
