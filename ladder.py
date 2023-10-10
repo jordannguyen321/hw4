@@ -1,6 +1,6 @@
 def my_steps(x):
     if x < 1 or x > 25:
-        raise ValueError("Input must be between 1 and 25")
+        raise ValueError("Input is not between 1-25")
 
     if x <= 2:
         return x
