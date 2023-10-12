@@ -1,4 +1,4 @@
-def sort_dictionary(inDict):
+def reverse_sort_dictionary(inDict):
     if not isinstance(inDict, dict):
         raise TypeError("Input is not a dictionary")
 
